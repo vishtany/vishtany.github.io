@@ -16,17 +16,40 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/themes/indigo-white.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        twitter: '#1da1f2',
+                        github: '#333',
+                        githubalt: '#4078c0',
+                        linkedin: '#0077b5'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <main>
+    <main class="bg-black">
         <div class="intro">Hello, I'm Lance!</div>
         <div class="tagline">
             Blogger/Content Writer | Web Developer | Internet Marketer (#Web #SEO) <br> #Crypto #INTP
-        </div>>
-        <div class="">
-            <a href="mailto:lance.cameron@bitvoxy.com" class="bg-blue-500 text-white rounded font-bold py-2 px-4 " target="_blank"><i class="fab fab-solid fab-briefcase"></i> Contact</a>
-            <a href="uploads/LC-resume-2022-alt.pdf" class="bg-blue-500 text-white rounded font-bold py-2 px-4 " target="_blank" download><i class="fab fab-solid fab-briefcase"></i> Download Resume</a>
+
+            <br>
+            <div class="pt-6 inline-block">
+                <a href="mailto:lance.cameron@bitvoxy.com" class="bg-blue-700 hover:bg-blue-500 text-white text-sm rounded-lg font-bold py-2 px-4 mt-3 mr-3" target="_blank">
+                    <i class="fa fa-regular fa-comment fill-current w-4 h-4 mr-2"></i>
+                    <span> Contact Me</span>
+                </a>
+                <a href="uploads/LC-resume-2022-alt.pdf" class="bg-green-700 hover:bg-green-500 text-white text-sm rounded-lg font-bold py-2 px-4 mt-3 mr-3" target="_blank" download>
+                    <i class="fa fa-solid fa-briefcase"></i>
+                    <span> Download CV</span>
+                </a>
+            </div>
+
         </div>
         <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
         <div class="icons-social">
@@ -35,11 +58,12 @@
             <a target="_blank" href="https://bitvoxy.com" alt="BITVoxy Post"><i class="fa fa-newspaper"></i></a>
         </div <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
         <div class="icons-social">
-            <a target="_blank" href="https://github.com/vishtany"><i class="fab fa-github"></i></a>
-            <a target="_blank" href="https://twitter.com/vishtany"><i class="fab fa-twitter"></i></a>
+            <p>Social</p>
+            <a target="_blank" href="https://github.com/vishtany"><i class="fab fa-github text-githubalt"></i></a>
+            <a target="_blank" href="https://twitter.com/vishtany"><i class="fab fa-twitter text-twitter"></i></a>
             <a target="_blank" href="https://dev.to/vishtany"><i class="fab fa-dev"></i></a>
             <!--<a target="_blank" href="https://stackoverflow.com/story/vishtany"><i class="fab fa-stack-overflow"></i></a>-->
-            <a target="_blank" href="https://www.linkedin.com/in/lancecameron"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/lancecameron"><i class="fab fa-linkedin text-linkedin"></i></a>
             <a target="_blank" href="https://medium.com/@vishtany"><i class="fab fa-medium"></i></a>
             <a target="_blank" href="https://www.freecodecamp.org/vishtany"><i class="fab fa-free-code-camp"></i></a>
             <!--<a target="_blank" href="https://www.behance.net/vishtany"><i class="fab fa-behance"></i></a>
